@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 
-const API = import.meta.env.VITE_API_BASE || 'http://localhost:5000'
+const API = import.meta.env.VITE_API_BASE || 'https://your-backend.onrender.com'
 
 export default function Login() {
   const [email, setEmail] = useState('')

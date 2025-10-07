@@ -1,0 +1,48 @@
+# === Python ===
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.py.class
+
+# === Virtual Environments ===
+venv/
+env/
+.venv/
+ENV/
+
+# === Environment / Config Files ===
+.env
+*.env
+*.config
+config.env
+env.config
+
+# === OS / Editor Files ===
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# === Logs and Output ===
+*.log
+logs/
+*.out
+*.err
+
+# === Dependencies / Build ===
+*.egg-info/
+dist/
+build/
+
+# === Model / Data Files (optional if generated dynamically) ===
+models/
+data/
+*.csv
+*.npy
+*.pkl
+*.h5
+
+# === Shell / Batch cache (keep start scripts tracked if necessary) ===
+!start.bat
+!start.sh

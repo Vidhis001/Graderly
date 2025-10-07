@@ -13,7 +13,13 @@ const app = express();
 const port = process.env.PORT || 5000;
 const mongoUri = process.env.MONGO_URI || 'mongodb://localhost:27017/sags';
 
-app.use(cors());
+const corsOptions = {
+  origin: process.env.NODE_ENV === 'production' 
+    ? [process.env.FRONTEND_URL || 'https://your-frontend.vercel.app'] 
+    : ['http://localhost:5173'],
+  credentials: true
+}
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(morgan('dev'));
 
